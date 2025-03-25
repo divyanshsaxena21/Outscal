@@ -1,2 +1,0 @@
-# Outscal
-Material from Outscal
