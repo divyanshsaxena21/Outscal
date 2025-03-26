@@ -7,3 +7,5 @@
 - **Dynamic Obstacle:** "An obstacle that moves or changes over time, requiring players to adapt their strategy and timing continuously."
 
 - **Frame Rate:** "The frequency at which consecutive images (frames) appear on a display. Measured in frames per second (FPS), it determines how smooth motion appears in games and animations."
+
+- **Velocity:** "The speed and direction of an object's movement. In 2D games, it's represented as a Vector2 (x and y components).”

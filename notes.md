@@ -198,3 +198,39 @@ As you can see, the rotation speed is directly tied to the frame rate, which can
 In the same amount of time(1 second), the number of rotations varies!
 
 **If you multiply Time.deltaTime to the rotationAmount the rotation will be independent of the frame rate.**
+
+### Collision
+
+For a collision to work, you’ll need these components:
+
+- **Colliders:** Defines the physical boundaries of an object, allowing it to interact with other objects.
+- **Rigidbody:** At least one object must have a Rigidbody component for collisions to work.
+
+#### Rigidbody
+
+It gives objects physics-related properties like:
+
+Mass: How heavy the object is
+Velocity: How fast and in what direction it's moving
+Collision Detection: How accurately it detects collisions
+
+Objects without a Rigidbody won't react to collisions or forces in the game world.
+
+But, Why?!🤨
+
+This is because Collisions are also a part of Unity’s physics engine!
+
+
+**What is a Trigger?**
+
+A trigger is a special type of collider that doesn't physically block objects, but instead detects when a game object enters, exits or stays in an area.
+
+Triggers can be used to detect when a player enters a specific area.
+
+
+**TRIGGERS V/S COLLIDER**
+
+- A collider is like a wall - it physically stops objects.
+- A trigger is like a motion sensor - it detects movement but doesn't block anything.
+
+Use colliders when you need physical interactions and triggers when you just want to detect a presence

@@ -21,3 +21,6 @@ It enables your scripts to be attached to Game Objects
 - **Vector3.MoveTowards:** A Unity function that moves a game object towards a target position. It takes three parameters: the current position, the target position, and the maximum distance to move.
 
 - **Mathf.Clamp:** A Unity function that constrains a value within a specified range. It takes three parameters: the value to clamp, the minimum allowed value, and the maximum allowed value.
+
+- **GetComponent:** GetComponent<T>() is a method in Unity that allows you to access other components attached to the same GameObject as the script.
+
