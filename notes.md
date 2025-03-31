@@ -234,3 +234,69 @@ Triggers can be used to detect when a player enters a specific area.
 - A trigger is like a motion sensor - it detects movement but doesn't block anything.
 
 Use colliders when you need physical interactions and triggers when you just want to detect a presence
+
+### Different Types of UI in Games
+
+Let's look at two types of UI you'll find in most games:
+
+- **Menus:** These help you navigate through the game options.
+- **HUD (Heads-Up Display):** This shows important info while you're playing.
+
+**Reference Resolution:** (Recommended: 1920 X 1080) The resolution is used as a reference. If the screen resolution is larger than the reference resolution, the UI will be scaled up, and if it's smaller, the UI will be scaled down.
+**Match:**(Recommended: 0.5) Determines if the scaling is using the width or height as a reference, or a mix in between
+
+## Anchors
+
+Anchors define how UI elements stick to their parent container.
+
+They have four values:
+
+- Min X, Min Y: Bottom-left anchor point
+- Max X, Max Y: Top-right anchor point
+
+Values range from 0 to 1, representing percentage of parent's width/height.
+
+*Here's what those values mean:*
+
+- 0: Represents the starting point of the parent's width or height (e.g., left side or bottom).
+- 1: Represents the ending point of the parent's width or height (e.g., right side or top).
+
+
+So, an anchor of Min(0.5, 0.5) Max(0.5, 0.5) would place the UI element in the center of its parent, while Min(0, 0) Max(0, 0) would place it in the bottom-left corner, and Min(1, 1) Max(1, 1) in the top-right corner.
+
+*Here’s another example:*
+
+- Min X = 0, Max X = 1: Element stretches full width
+- Min Y = 0, Max Y = 0: Element sticks to bottom
+
+
+### Pivot: The Rotation and Scaling Center
+
+*Pivot is the point around which UI elements rotate and scale.*
+
+- (0, 0) is bottom-left
+- (1, 1) is top-right
+- (0.5, 0.5) is center
+You can choose your pivot based on how you want your element to transform.
+
+#### Anchor Presets: Quick UI Positioning
+
+Anchor Presets are pre-defined anchor and pivot combinations.
+
+They're great for quickly positioning UI elements.
+
+You can use the presets to position the level number correctly
+
+#### Event System
+
+The Event System is crucial for interactive UI elements like buttons. It:
+
+Detects user inputs (mouse clicks, touch, keyboard)
+Determines which UI element is being interacted with
+Triggers appropriate responses (e.g., button clicks)
+
+*PRO TIP💡:* 
+If your UI isn't responding to input, check if an Event System is present in your scene.
+
+Unity automatically creates an Event System when you add your first UI element. You typically don't need to modify it, but understanding its role is important.
+

@@ -24,3 +24,15 @@ It enables your scripts to be attached to Game Objects
 
 - **GetComponent:** GetComponent<T>() is a method in Unity that allows you to access other components attached to the same GameObject as the script.
 
+- **Canvas:** "A GameObject in Unity that acts as a container for all UI elements. It manages the rendering and scaling of UI across different screen sizes and resolutions.
+
+- **Canvas Scaler:** "The Canvas Scaler component controls the overall scale and pixel density of UI elements in the Canvas. This scaling affects everything under the Canvas, including font sizes and image borders."
+
+- **Text-TextMeshPro:** "A Unity package that provides high-quality text rendering with advanced features like custom fonts, rich text, and better performance than Unity's built-in text components."
+
+- **Button:** "A UI element that responds to a click or touch event by executing assigned functionality."
+
+- **Event System:** "A Unity component that manages input and event handling for UI elements."
+
+- **AddListener:** "A method that assigns a function to be called when a UI element (like a button) is interacted with."
+
