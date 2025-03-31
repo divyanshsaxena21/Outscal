@@ -36,3 +36,9 @@ It enables your scripts to be attached to Game Objects
 
 - **AddListener:** "A method that assigns a function to be called when a UI element (like a button) is interacted with."
 
+- **Audio Source:** "A Unity component that plays audio clips in a scene, controlling properties like volume, pitch, looping, and 3D spatial sound behavior."
+
+- **PlayOneShot:**   "A method used to play an audio clip once without interrupting any audio already playing on the AudioSource. It is useful for sound effects, like button clicks or explosions."
+
+- **DontDestroyOnLoad:**  "Preserves an Object during scene loading."
+
